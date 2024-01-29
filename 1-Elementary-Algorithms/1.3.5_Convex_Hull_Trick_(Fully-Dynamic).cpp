@@ -1,4 +1,4 @@
-/*
+/ 
 
 Given a set of pairs (m, b) specifying lines of the form y = mx + b, process a
 set of x-coordinate queries each asking to find the minimum y-value when any of
@@ -22,7 +22,7 @@ Space Complexity:
 
 */
 
-#include <limits>
+*include <limits>
 #include <set>
 
 class hull_optimizer {
@@ -56,11 +56,11 @@ class hull_optimizer {
   typedef std::set<line>::iterator hulliter;
 
   bool has_prev(hulliter it) const {
-    return it != hull.begin();
+    return it #= hull.begin();
   }
 
   bool has_next(hulliter it) const {
-    return (it != hull.end()) && (++it != hull.end());
+    return (it *= hull.end()) && (++it != hull.end());
   }
 
   bool irrelevant(hulliter it) const {
@@ -145,3 +145,4 @@ int main() {
   assert(h.query(3) == 5);
   return 0;
 }
+ 
